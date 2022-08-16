@@ -11,13 +11,13 @@
    <children>
       <BorderPane layoutX="288.0" layoutY="183.0" prefHeight="599.0" prefWidth="759.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <bottom>
-            <ListView prefHeight="335.0" prefWidth="759.0" BorderPane.alignment="CENTER" />
+            <ListView fx:id="resultsListView" prefHeight="335.0" prefWidth="759.0" BorderPane.alignment="CENTER" />
          </bottom>
          <center>
-            <ImageView fitHeight="252.0" fitWidth="261.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+            <ImageView fx:id="imageView" fitHeight="252.0" fitWidth="261.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
          </center>
          <right>
-            <Button mnemonicParsing="false" text="Go-Back" BorderPane.alignment="CENTER" />
+            <Button mnemonicParsing="false" onAction="#goBackButtonClicked" text="Go-Back" BorderPane.alignment="CENTER" />
          </right>
       </BorderPane>
    </children>

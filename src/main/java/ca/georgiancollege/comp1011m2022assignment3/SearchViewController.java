@@ -50,6 +50,12 @@ public class SearchViewController implements Initializable
         resultsListView.requestFocus();
     }
 
+    @FXML
+    void showDetailsButtonClicked(ActionEvent event) throws Exception{
+        SceneManager.Instance().changeScene(event,"details-view.fxml");
+
+    }
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle)
     {

@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 
-
 <AnchorPane prefHeight="599.0" prefWidth="759.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.georgiancollege.comp1011m2022assignment3.SearchViewController">
    <children>
       <BorderPane layoutX="280.0" layoutY="200.0" prefHeight="599.0" prefWidth="759.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -28,7 +27,7 @@
             <ListView fx:id="resultsListView" prefHeight="258.0" prefWidth="759.0" BorderPane.alignment="CENTER" />
          </bottom>
          <right>
-            <Button mnemonicParsing="false" prefHeight="46.0" prefWidth="120.0" text="Show Details" BorderPane.alignment="CENTER" />
+            <Button mnemonicParsing="false" onAction="#showDetailsButtonClicked" prefHeight="46.0" prefWidth="120.0" text="Show Details" BorderPane.alignment="CENTER" />
          </right>
          <center>
             <ImageView fx:id="imageView" fitHeight="308.0" fitWidth="351.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
