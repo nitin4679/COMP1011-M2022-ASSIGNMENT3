@@ -52,10 +52,8 @@ public class SearchViewController implements Initializable
 
     @FXML
     void showDetailsButtonClicked(ActionEvent event) throws Exception{
-
-
-
-
+        String imdbID = resultsListView.getSelectionModel().getSelectedItem().getIMDB_ID();
+        SceneManager.Instance().changeScene2(event, "details-view.fxml",imdbID);
     }
 
     @Override

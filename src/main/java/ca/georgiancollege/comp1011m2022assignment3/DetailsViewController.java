@@ -8,6 +8,7 @@ import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -53,9 +54,37 @@ public class DetailsViewController {
     private Label yearLabel;
 
     @FXML
-    void goBackButtonClicked(ActionEvent event) {
+    void goBackButtonClicked(ActionEvent event) throws IOException {
+        SceneManager.Instance().changeScene(event, "search-view.fxml");
 
     }
 
+    private Movie movieDetails;
+
+    public void getMovieDetails(String imdbID){
+        movieDetails = APIManager.Instance().getMovieDetailsFromOMDBByID(imdbID);
+        titleLabel.setText(movieDetails.getTitle());
+        yearLabel.setText(movieDetails.getYear());
+        ratedLabel.setText(movieDetails.getRated());
+        releasedLabel.setText(movieDetails.getReleased());
+        runtimeLabel.setText(movieDetails.getRuntime());
+        genreLabel.setText(movieDetails.getGenre());
+        directorLabel.setText(movieDetails.getDirector());
+        writersLabel.setText(movieDetails.getWriters());
+        actorsLabel.setText(movieDetails.getActors());
+        plotLabel.setText(movieDetails.getPlot());
+        imdbIDLabel.setText(movieDetails.getIMDB_ID());
+        typeLabel.setText(movieDetails.getType());
+
+        var posterNotFoundImage = new Image(getClass().getResourceAsStream("poster-not-found.png"));
+
+        try
+        {
+            imageView.setImage(new Image((movieDetails.getPoster())));
+        }catch(Exception e)
+        {
+            imageView.setImage(posterNotFoundImage);
+        }
+    }
 
 }

@@ -46,5 +46,18 @@ public class SceneManager
         stage.show();
     }
 
+    // overloaded function
+    public void changeScene2(ActionEvent event, String FXMLFileName, String imdbID) throws IOException
+    {
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(FXMLFileName));
+        Scene scene = new Scene(fxmlLoader.load());
+        DetailsViewController controller = fxmlLoader.getController();
+        controller.getMovieDetails(imdbID);
+
+        //derive the stage (window) from the action event (button press)
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
 
 }
