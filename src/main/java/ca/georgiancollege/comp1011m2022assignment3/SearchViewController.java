@@ -53,7 +53,8 @@ public class SearchViewController implements Initializable
     @FXML
     void showDetailsButtonClicked(ActionEvent event) throws Exception{
 
-       SceneManager.Instance().changeScene(event, "details-view.fxml");
+
+
 
     }
 

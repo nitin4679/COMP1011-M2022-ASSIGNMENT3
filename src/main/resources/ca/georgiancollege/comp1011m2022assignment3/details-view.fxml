@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-
 <AnchorPane prefHeight="599.0" prefWidth="759.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.georgiancollege.comp1011m2022assignment3.DetailsViewController">
    <children>
       <BorderPane layoutX="288.0" layoutY="183.0" prefHeight="599.0" prefWidth="759.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -34,18 +33,30 @@
                   <RowConstraints maxHeight="239.0" minHeight="10.0" prefHeight="23.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Label fx:id="yearLabel" text="Year" GridPane.rowIndex="1" />
-                  <Label fx:id="titleLabel" text="Title" />
-                  <Label fx:id="ratedLabel" text="Rated" GridPane.rowIndex="2" />
-                  <Label fx:id="releasedLabel" text="Released" GridPane.rowIndex="3" />
-                  <Label fx:id="runtimeLabel" text="Runtime" GridPane.rowIndex="4" />
-                  <Label fx:id="genreLabel" text="Genre" GridPane.rowIndex="5" />
-                  <Label fx:id="directorLabel" text="Director" GridPane.rowIndex="6" />
-                  <Label fx:id="writersLabel" text="Writers" GridPane.rowIndex="7" />
-                  <Label fx:id="actorsLabel" text="Actors" GridPane.rowIndex="8" />
-                  <Label fx:id="plotLabel" text="Plot" GridPane.rowIndex="9" />
-                  <Label fx:id="imdbIDLabel" text="imdbID" GridPane.rowIndex="10" />
-                  <Label fx:id="typeLabel" text="Type" GridPane.rowIndex="11" />
+                  <Label text="Year:" GridPane.rowIndex="1" />
+                  <Label text="Movie Name:" />
+                  <Label text="Rated:" GridPane.rowIndex="2" />
+                  <Label text="Released:" GridPane.rowIndex="3" />
+                  <Label text="Runtime:" GridPane.rowIndex="4" />
+                  <Label text="Genre:" GridPane.rowIndex="5" />
+                  <Label text="Director:" GridPane.rowIndex="6" />
+                  <Label text="Writers:" GridPane.rowIndex="7" />
+                  <Label text="Actors:" GridPane.rowIndex="8" />
+                  <Label text="Plot:" GridPane.rowIndex="9" />
+                  <Label text="imdbID:" GridPane.rowIndex="10" />
+                  <Label text="Type:" GridPane.rowIndex="11" />
+                  <Label fx:id="plotLabel" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                  <Label fx:id="titleLabel" GridPane.columnIndex="1" />
+                  <Label fx:id="yearLabel" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="ratedLabel" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label fx:id="releasedLabel" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label fx:id="runtimeLabel" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label fx:id="genreLabel" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Label fx:id="directorLabel" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <Label fx:id="writersLabel" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <Label fx:id="actorsLabel" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <Label fx:id="imdbIDLabel" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                  <Label fx:id="typeLabel" GridPane.columnIndex="1" GridPane.rowIndex="11" />
                </children>
             </GridPane>
          </right>
