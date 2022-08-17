@@ -8,9 +8,39 @@
     -fx-alignment: CENTER;
 }
 
-#grid-pane-border
+#border
 {
     -fx-border-style: none none solid none;
     -fx-border-color: black;
 
 }
+#anchorPane{
+    -fx-background-color: d62828;
+    -fx-border-style: none none solid none;
+    -fx-border-width: 5px;
+        -fx-border-color: black;
+        -fx-padding: 10 10 10 10;
+
+}
+
+#resultListView{
+-fx-background-color: eae2b7;
+-fx-border-style: none none solid none;
+    -fx-border-width: 2px;
+        -fx-border-color: black;
+}
+
+#button{
+-fx-border-style: none none solid none;
+    -fx-border-width: 1px;
+        -fx-border-color: black;
+        -fx-background-color: fca311;
+        -fx-font-size: 15px;
+}
+
+#gridPane{ -fx-background-color: white;
+
+-fx-padding: 5;
+
+}
+
