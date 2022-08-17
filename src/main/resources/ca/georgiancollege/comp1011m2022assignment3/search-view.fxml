@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.TextField?>
@@ -24,7 +25,10 @@
             </HBox>
          </top>
          <bottom>
-            <ListView fx:id="resultsListView" prefHeight="258.0" prefWidth="759.0" BorderPane.alignment="CENTER" />
+            <ListView fx:id="resultsListView" prefHeight="258.0" prefWidth="759.0" BorderPane.alignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ListView>
          </bottom>
          <right>
             <Button mnemonicParsing="false" onAction="#showDetailsButtonClicked" prefHeight="46.0" prefWidth="120.0" text="Show Details" BorderPane.alignment="CENTER" />

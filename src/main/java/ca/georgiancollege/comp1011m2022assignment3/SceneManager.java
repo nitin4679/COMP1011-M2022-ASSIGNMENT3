@@ -33,6 +33,8 @@ public class SceneManager
      * @param event
      * @param FXMLFileName
      */
+
+
     public void changeScene(ActionEvent event, String FXMLFileName) throws IOException
     {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(FXMLFileName));
@@ -43,4 +45,5 @@ public class SceneManager
         stage.setScene(scene);
         stage.show();
     }
+
 }

@@ -2,8 +2,7 @@ package ca.georgiancollege.comp1011m2022assignment3;
 
 import com.google.gson.annotations.SerializedName;
 
-public class Movie
-{
+public class Movie {
     // Private Instance Members
     @SerializedName("Title")
     private String m_title;
@@ -152,8 +151,7 @@ public class Movie
     }
 
     // Constructors
-    public Movie()
-    {
+    public Movie() {
         this.m_title = "";
         this.m_year = "";
         this.m_rated = "";
@@ -169,8 +167,7 @@ public class Movie
         this.m_type = "";
     }
 
-    public Movie(String title, String year, String rated, String released, String runtime, String genre, String director, String writers, String actors, String plot, String poster, String imdbID, String type)
-    {
+    public Movie(String title, String year, String rated, String released, String runtime, String genre, String director, String writers, String actors, String plot, String poster, String imdbID, String type) {
         this.m_title = title;
         this.m_year = year;
         this.m_rated = rated;
@@ -190,11 +187,9 @@ public class Movie
     @Override
     public String toString() {
 
-//        return String.format("Title: %s%nYear: %s%nRated: %s%nReleased: %s%nRuntime: %s%nGenre: %s%nDirector: %s%nWriters: %s%nActors: %s%nPlot: %s%nPoster: %s%nIMDB ID: %s%nType: %s%n",
-//                getTitle(), getYear(), getRated(), getReleased(), getRuntime(), getGenre(), getDirector(),
-//                getWriters(), getActors(), getPlot(), getPoster(), getIMDB_ID(), getType());
-
         return String.format("Title: %s, Year: %s",
                 getTitle(), getYear());
     }
+
+
 }

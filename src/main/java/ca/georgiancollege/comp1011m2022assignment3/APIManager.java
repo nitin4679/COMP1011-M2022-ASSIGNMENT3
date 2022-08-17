@@ -90,7 +90,7 @@ public class APIManager
         return null;
     }
 
-    public Movie getMovieFromOMDBByID(String imdbID)
+    public Movie getMovieDetailsFromOMDBByID(String imdbID)
     {
         // Step 1. Construct your URL
         String APIKey = "8abbcbe2";
