@@ -8,17 +8,10 @@ public class MovieSearchResults
     @SerializedName("Search")
     private Movie[] m_movies;
 
-    @SerializedName("totalResults")
-    private String m_totalResults;
-
     // Getters (Readonly Properties)
 
     public Movie[] getMovies() {
         return m_movies;
-    }
-
-    public String getTotalResults() {
-        return m_totalResults;
     }
 
     // Overridden methods

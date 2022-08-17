@@ -39,8 +39,9 @@ public class SearchViewController implements Initializable
         }
         else
         {
-            // movie was not found - maybe output to a message label of some kind
-        }
+            var noMovieFound = new Image(getClass().getResourceAsStream("notFound.jpeg"));
+
+            imageView.setImage(noMovieFound);        }
     }
 
     @FXML
