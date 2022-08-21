@@ -27,37 +27,6 @@ public class APIManager
     }
     /*********************************************************************/
 
-    public Movie getMovieFromOMDBByTitleAndYear(String title, String year)
-    {
-        // Step 1. Construct your URL
-        String APIKey = "8abbcbe2";
-        title = title.replace(" ", "%20");
-        String URL = "https://www.omdbapi.com/?apikey=" + APIKey + "&t=" + title + "&y=" + year;
-
-        // Step 2. Create a Client Object
-        HttpClient client = HttpClient.newHttpClient();
-
-        // Step 3. Create a Request Object
-        HttpRequest httpRequest = HttpRequest.newBuilder().uri(URI.create(URL)).build();
-
-        try
-        {
-            // Step 4. Create a Response object
-            HttpResponse<String> response = client.send(httpRequest, HttpResponse.BodyHandlers.ofString());
-
-            // Step 5. Create a Gson object
-            Gson gson = new Gson();
-
-            // Step 6. Deserialize the data using the fromJSON method
-            return gson.fromJson(response.body(), Movie.class);
-        }
-        catch(Exception exception)
-        {
-            exception.printStackTrace();
-        }
-
-        return null;
-    }
     public MovieSearchResults getMovieFromOMDBBySearchTerm(String searchTerm)
     {
         // Step 1. Construct your URL
